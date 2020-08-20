@@ -1,0 +1,7 @@
+<launch>
+  <arg name="model" default="$(env SAURONBOT_MODEL)" doc="model type [model_01, model_02, model_03]"/>
+  <param name="model" value="$(arg model)"/>
+
+  <node pkg="sauronbot_teleop" type="sauronbot_teleop_key" name="sauronbot_teleop_keyboard"  output="screen">
+  </node>
+</launch>

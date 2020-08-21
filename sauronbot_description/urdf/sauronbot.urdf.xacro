@@ -112,9 +112,9 @@
 
   <link name="base_scan">
     <visual>
-      <origin xyz="0 -0.047 -0.031" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://sauronbot_description/meshes/sensors/RPLIDAR_A3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://sauronbot_description/meshes/sensors/RPLIDAR_A3_C.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="light_black"/>
     </visual>

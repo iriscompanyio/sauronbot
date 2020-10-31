@@ -35,7 +35,7 @@ if os.name == 'nt':
 else:
   import tty, termios
 
-MODEL_01_MAX_LIN_VEL = 0.22
+MODEL_01_MAX_LIN_VEL = 0.10
 MODEL_01_MAX_ANG_VEL = 2.84
 
 MODEL_02_MAX_LIN_VEL = 0.26
@@ -52,7 +52,7 @@ Moving around:
    a    s    d
         x
 
-w/x : increase/decrease linear velocity (Model_01 : ~ 0.22, Model_02 and Model_03 : ~ 0.26)
+w/x : increase/decrease linear velocity (Model_01 : ~ 0.10, Model_02 and Model_03 : ~ 0.26)
 a/d : increase/decrease angular velocity (Model_01 : ~ 2.84, Model_03 and Model_03 : ~ 1.82)
 
 space key, s : force stop

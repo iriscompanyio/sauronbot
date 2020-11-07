@@ -41,4 +41,8 @@
   <material name="white">
     <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
+
+  <material name="RPICAMERA_V2_mat">
+        <color rgba="0.25 0.25 0.25 0.99"/>
+    </material>
 </robot>

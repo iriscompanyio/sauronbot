@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <robot name="sauronbot" xmlns:xacro="http://ros.org/wiki/xacro">
 	<xacro:include filename="$(find sauronbot_description)/urdf/common_properties.xacro"/>
-
+  
   <!-- Arguments -->
   <xacro:arg name="camera_name"   default="rpi" />
   <xacro:arg name="camera_model"  default="RPICAMERA_V2" />
@@ -13,13 +13,24 @@
   <xacro:arg name="cam_pitch"     default="0.0" />
   <xacro:arg name="cam_yaw"       default="0.0" />
 
+  <xacro:arg name="depth_camera_name"   default="realsese_d435" />
+  <xacro:arg name="depth_camera_model"  default="SOPORTE_REALSENSE_D435" />
+  <xacro:arg name="depth_base_frame"    default="base_link" />
+  <xacro:arg name="depth_cam_pos_x"     default="-0.08149" />
+  <xacro:arg name="depth_cam_pos_y"     default="0.0" />
+  <xacro:arg name="depth_cam_pos_z"     default="0.345" />
+  <xacro:arg name="depth_cam_roll"      default="0.0" />
+  <xacro:arg name="depth_cam_pitch"     default="0.0" />
+  <xacro:arg name="depth_cam_yaw"       default="0.0" />
+
   <!-- Properties -->
 	<xacro:property name="r200_cam_rgb_px" value="0.005"/>
   <xacro:property name="r200_cam_rgb_py" value="0.018"/>
   <xacro:property name="r200_cam_rgb_pz" value="0.013"/>
   <xacro:property name="r200_cam_depth_offset" value="0.01"/>
 
-  <xacro:property name="camera_model_stl"    value="$(arg camera_model)" />
+  <xacro:property name="camera_model_stl"           value="$(arg camera_model)" />
+  <xacro:property name="depth_camera_model_stl"     value="$(arg depth_camera_model)" />
 
   <link name="base_footprint"/>
 
@@ -185,5 +196,34 @@
     <child link="$(arg camera_name)_camera_rgb_optical_frame"/>
   </joint>
   <link name="$(arg camera_name)_camera_rgb_optical_frame"/>
+
+  <!-- Depth Camara -->
+  <joint name="$(arg depth_camera_name)_camera_joint" type="fixed">
+    <origin xyz="$(arg depth_cam_pos_x) $(arg depth_cam_pos_y) $(arg depth_cam_pos_z)" rpy="$(arg depth_cam_roll) $(arg depth_cam_pitch) $(arg depth_cam_yaw)"/>
+    <parent link="$(arg depth_base_frame)"/>
+    <child link="$(arg depth_camera_name)_base_link"/>
+  </joint>
+
+  <xacro:arg name="use_nominal_extrinsics" default="false"/>
+  <xacro:include filename="$(find sauronbot_description)/urdf/_d435.urdf.xacro" />
+  <link name="$(arg depth_camera_name)_base_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.015 0.030 0.027"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://sauronbot_description/meshes/sensors/${depth_camera_model_stl}.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${camera_model_stl}_mat" />
+    </visual>
+  </link>
+
+  <xacro:sensor_d435 parent="$(arg depth_camera_name)_base_link" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">
+    <origin xyz="0 0 0.01201" rpy="0 0 0"/>
+  </xacro:sensor_d435>
 
 </robot>	

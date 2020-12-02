@@ -61,11 +61,11 @@
     </collision>
     
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="3.57516e+00"/>
-      <inertia ixx="8.7002718e-03" ixy="-4.7576583e-05" ixz="1.1160499e-04"
-               iyy="8.6195418e-03" iyz="-3.5422299e-06"
-               izz="1.4612727e-02" />
+      <origin xyz="-0.07724994 0.00010247 0.07636139" rpy="0 0 0"/>
+      <mass value="3.57515504e+00"/>
+      <inertia ixx="47.13236e-03" ixy="88.68e-09" ixz="-24.5273e-04"
+               iyy="46.11917e-03" iyz="-9.0e-06"
+               izz="7.414357e-02" />
     </inertial>
   </link>
 
@@ -226,13 +226,13 @@
       </geometry>
       <material name="${camera_model_stl}_mat" />
     </visual>
-<!--     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="1.3729096e+00"/>
-      <inertia ixx="8.7002718e-03" ixy="-4.7576583e-05" ixz="1.1160499e-04"
-               iyy="8.6195418e-03" iyz="-3.5422299e-06"
-               izz="1.4612727e-02" />
-    </inertial> -->
+     <inertial>
+      <origin xyz="-0.08176576 -0.00005103 0.24947569" rpy="0 0 0"/>
+      <mass value="0.05701498e+00"/>
+      <inertia ixx="0.24961e-03" ixy="20e-09" ixz="-1.05e-06"
+               iyy="0.24976e-03" iyz="-0.25e-06"
+               izz="10.363268e-06" />
+    </inertial>
   </link>
 
   <xacro:sensor_d435 parent="$(arg depth_camera_name)_base_link" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">

@@ -22,3 +22,39 @@ mkdir -p catkin_ws/src
 cd catkin_ws/src
 git clone https://github.com/jsotelo1024/sauronbot.git
 ```
+---
+## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
+Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.
+
+### **Opcion 1 (Recomendada):**
+Clonar la rama [melodic-SBC](https://github.com/jsotelo1024/sauronbot/tree/melodic-SBC)
+
+### **Opcion 2 :**
+* 1.- Clonar el repositorio
+```
+git clone -b melodic-devel git@github.com:jsotelo1024/sauronbot.git
+```
+* 2.- Borrar directorios innecesarios
+```
+rm -rf sauronbot_description sauronbot_gazebo sauronbot_mqtt sauronbot_slam CHANGELOG.md README.md
+```
+* 3.- Modificar sauronbot/package.xml
+~~~
+    <buildtool_depend>catkin</buildtool_depend>
+    <exec_depend>sauronbot_bringup</exec_depend>
+--  <exec_depend>sauronbot_slam</exec_depend>
+--  <exec_depend>sauronbot_description</exec_depend>
+--  <exec_depend>sauronbot_teleop</exec_depend>
+--  <exec_depend>sauronbot_gazebo</exec_depend>
+--  <exec_depend>sauronbot_mqtt</exec_depend>
+~~~ 
+* 4.- Modificar sauronbot_bringup/package.xml
+~~~
+    <exec_depend>std_msgs</exec_depend>
+
+--  <exec_depend>sauronbot_description</exec_depend>
+    <exec_depend>joint_state_publisher</exec_depend>
+    <exec_depend>robot_state_publisher</exec_depend>
+    <exec_depend>rosserial_python</exec_depend>
+    <exec_depend>rplidar_ros</exec_depend>
+~~~

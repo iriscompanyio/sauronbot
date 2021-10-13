@@ -58,6 +58,12 @@ Se procede con la busqueda de la IP del SBC:
 nmap -sP <IP_PC>/<#NETMASK>
 ```
 
+* _2.- Conectarse mediante ssh a la SBC_
+
+```
+ssh {USER}@{IP_ADDRESS_OF_SBC}
+```
+
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
 Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.

@@ -1,5 +1,5 @@
 <launch>
-  <arg name="model" default="$(env SAURONBOT_MODEL)" doc="model type [01, 02, 03]"/>
+  <arg name="model" default="$(env SAURONBOT_MODEL)" doc="model type [model_01, model_02, model_03]"/>
   <arg name="multi_robot_name" default=""/>
 
   <include file="$(find sauronbot_bringup)/launch/includes/description.launch.xml">

@@ -45,6 +45,8 @@ mkdir -p sauronbot_ws/src
 cd sauronbot_ws/src
 git clone -b master https://github.com/Slamtec/rplidar_ros.git
 ```
+
+## Funcionamiento 🚀
 ### Conexion con PC-SBC 🔧
 * _1.- Scanear la red local en busca del SBC_
 
@@ -104,6 +106,32 @@ Ejecutar en la SBC
 
 ```
 sudo ntpdate ntp.ubuntu.com
+```
+
+## MAPEO 🚀
+* _1.- Ejecutar en la SBC_
+
+```
+roslaunch sauronbot_bringup sauronbot_robot.launch
+```
+
+En la PC
+* _2.- Ejecutar el slam con el método hector_
+
+```
+roslaunch sauronbot_slam sauronbot_slam.launch slam_methods:=hector
+```
+
+* _3.- Desplzarse por el ambiente con teleop_
+
+```
+roslaunch sauronbot_teleop sauronbot_teleop_key.launch
+```
+
+* _4.- Guardar el mapa generado_
+
+```
+rosrun map_server map_saver -f {RUTA}/{NAME_MAP}
 ```
 
 ---

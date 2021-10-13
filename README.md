@@ -38,6 +38,14 @@ pip install -r requirements.txt
 sudo apt-get ros-melodic-rosbridge-server
 ```
 
+* _3.- Instalacion de dependencia: mqtt_bridege_
+```
+cd $HOME
+mkdir -p sauronbot_ws/src
+cd sauronbot_ws/src
+git clone -b master https://github.com/Slamtec/rplidar_ros.git
+```
+
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
 Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.

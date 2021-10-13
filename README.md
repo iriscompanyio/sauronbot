@@ -45,6 +45,18 @@ mkdir -p sauronbot_ws/src
 cd sauronbot_ws/src
 git clone -b master https://github.com/Slamtec/rplidar_ros.git
 ```
+### Conexion con PC-SBC 🔧
+* _1.- Scanear la red local en busca del SBC_
+
+Para lo cual se debe tener instalado nmap:
+
+```
+sudo apt-get install nmap
+```
+Se procede con la busqueda de la IP del SBC:
+```
+nmap -sP <IP_PC>/<#NETMASK>
+```
 
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL

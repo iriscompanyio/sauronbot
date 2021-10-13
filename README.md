@@ -1,4 +1,4 @@
-# SAURONBOT
+ # SAURONBOT
 _Robot diferencial_
 ## Modelos
 SE cuenta con los siguiente modelos de desarrollo:
@@ -13,15 +13,30 @@ _Que cosas necesitas para instalar el software y como instalarlas_
 * [Ubuntu 18.04](https://releases.ubuntu.com/18.04/)
   * [Tutorial de instalación](https://www.muylinux.com/2018/06/18/guia-instalacion-ubuntu-18-04-lts/)
 * [ROS-melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+
 ### Instalación 🔧
+
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 _Dí cómo será ese paso_
+
+* _1.- Descarga de archivos_ 
 ```
 cd $HOME
-mkdir -p catkin_ws/src
-cd catkin_ws/src
+mkdir -p sauronbot_ws/src
+cd sauronbot_ws/src
+git clone https://github.com/jsotelo1024/sauronbot_msgs.git
 git clone https://github.com/jsotelo1024/sauronbot.git
 ```
+* _2.- Instalacion de dependencia: mqtt_bridege_
+```
+cd $HOME
+mkdir -p sauronbot_ws/src
+cd sauronbot_ws/src
+git clone -b python2.7 https://github.com/groove-x/mqtt_bridege.git
+pip install -r requirements.txt
+sudo apt-get ros-melodic-rosbridge-server
+```
+
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
 Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.

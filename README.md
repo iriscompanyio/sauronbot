@@ -64,6 +64,48 @@ nmap -sP <IP_PC>/<#NETMASK>
 ssh {USER}@{IP_ADDRESS_OF_SBC}
 ```
 
+### Corriendo ROS en PC-SBC 🔧
+
+* _1.- Configurar $HOME/.bashrc de la PC_
+
+```
+++  export ROS_IP={IP_ADDRESS_OF_PC}
+++  export ROS_HOSTNAME={IP_ADDRESS_OF_PC}
+++  export ROS_MASTER_URI={IP_ADDRESS_OF_PC}:11311
+++  echo "ROS_IP: ${ROS_IP}"
+++  echo "ROS_HOSTNAME: ${ROS_HOSTNAME}"
+++  echo "ROS_MASTER_URI: ${ROS_MASTER_URI}"
+```
+
+* _2.- Configurar $HOME/.bashrc de la SBC_
+
+```
+++  export ROS_IP={IP_ADDRESS_OF_SBC}
+++  export ROS_HOSTNAME={IP_ADDRESS_OF_SBC}
+++  export ROS_MASTER_URI={IP_ADDRESS_OF_PC}:11311
+++  echo "ROS_IP: ${ROS_IP}"
+++  echo "ROS_HOSTNAME: ${ROS_HOSTNAME}"
+++  echo "ROS_MASTER_URI: ${ROS_MASTER_URI}"
+```
+
+* _3.- Sincronizar relojes_
+
+
+Tener instalado ntpdate:
+```
+sudo apt-get install ntpdate
+```
+Ejecutar en la PC
+
+```
+sudo ntpdate ntp.ubuntu.com
+```
+Ejecutar en la SBC
+
+```
+sudo ntpdate ntp.ubuntu.com
+```
+
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
 Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.

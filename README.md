@@ -33,6 +33,7 @@ cd $HOME
 mkdir -p sauronbot_ws/src
 cd sauronbot_ws/src
 git clone -b python2.7 https://github.com/groove-x/mqtt_bridege.git
+sudo apt install python-pip
 pip install -r requirements.txt
 sudo apt-get ros-melodic-rosbridge-server
 ```

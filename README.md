@@ -107,6 +107,21 @@ Ejecutar en la SBC
 ```
 sudo ntpdate ntp.ubuntu.com
 ```
+## ACTIVACION DE LA CÁMARA 🚀
+* _1.- Lanzar el nodo en la SBC mediante:_
+```
+roslaunch raspicam_node camerav2_410x308_30fps.launch
+```
+
+* _2.- Lanzar el GUI de configuracion en la PC_
+```
+rosrun rqt_reconfigure rqt_reconfigure
+```
+
+* _3.- Vizualizar la imagen en la PC mediante:_
+```
+rqt_image_view
+```
 
 ## MAPEO 🚀
 * _1.- Ejecutar en la SBC_

@@ -149,6 +149,18 @@ roslaunch sauronbot_teleop sauronbot_teleop_key.launch
 rosrun map_server map_saver -f {RUTA}/{NAME_MAP}
 ```
 
+## NAVEGACIÓN 🚀
+* _1.- Lanzar el nodo del robot en el SBC_
+
+```
+roslaunch sauronbot_bringup sauronbot_robot.launch
+```
+* _2.- Lanzar el nodo de navegación en la PC_
+
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=<Ruta_del_mapa>/<nombre_del_mapa>.yaml
+```
+
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
 Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.

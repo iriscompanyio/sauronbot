@@ -55,6 +55,7 @@
   <exec_depend>sauronbot_teleop</exec_depend>
   <exec_depend>sauronbot_gazebo</exec_depend>
   <exec_depend>sauronbot_mqtt</exec_depend>
+  <exec_depend>sauronbot_navigation</exec_depend>
   <!--
   
   <exec_depend>sauronbot_example</exec_depend>

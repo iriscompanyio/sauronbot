@@ -161,6 +161,22 @@ roslaunch sauronbot_bringup sauronbot_robot.launch
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=<Ruta_del_mapa>/<nombre_del_mapa>.yaml
 ```
 
+## MONITOREO DE ROS 🚀
+Ros te brinda herramientas para analizar el flujo de datos.
+* _1.- Vizulizar el arbol de tf_
+
+```
+rosrun rqt_tf_tree rqt_tf_tree
+```
+* _2.- Monitorear los ttpicos_
+
+```
+rqt
+```
+Seleccionar _Plugins/Topics/Topic Monitor_
+
+<img src="/home/auror1024/Pictures/Screenshot from 2021-10-14 14-38-13.png" width="500">
+
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
 Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.

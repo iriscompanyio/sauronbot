@@ -175,7 +175,7 @@ rqt
 ```
 Seleccionar _Plugins/Topics/Topic Monitor_
 
-<img src="https://drive.google.com/file/d/1V1NW5-CdyPlD71YSbCmO87Xw6ycYgDZt/view?usp=sharing" width="500">
+![](https://drive.google.com/file/d/1V1NW5-CdyPlD71YSbCmO87Xw6ycYgDZt/view?usp=sharing)
 
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL

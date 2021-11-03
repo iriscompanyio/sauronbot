@@ -220,7 +220,7 @@ rm -rf sauronbot_description sauronbot_gazebo sauronbot_mqtt sauronbot_slam CHAN
 Para ahorrar recursos en la SBC, se puede usar solo el paquete sauronbot_bringup, que se optiene de dos maneras.
 
 ### **Opcion 1 (Recomendada):**
-Clonar la rama [melodic-SBC](https://github.com/jsotelo1024/sauronbot/tree/melodic-SBC)
+Clonar la rama [melodic-diff](https://github.com/jsotelo1024/sauronbot/tree/melodic-diff)
 
 ### **Opcion 2 :**
 * 1.- Clonar el repositorio

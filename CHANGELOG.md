@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/jsotelo1024/sauronbot/compare/v1.0.0...v1.1.0) (2021-11-03)
+
+
+### Features
+
+* add model_04 ([9c9e717](https://github.com/jsotelo1024/sauronbot/commit/9c9e717491dbfcdcde0888eda72b0c616cb91dc9))
+* busqueda IP SBC ([539b432](https://github.com/jsotelo1024/sauronbot/commit/539b43264f92966ce1b413fbfaa328dc9f2b2237))
+* conectado mediante ssh ([1b58a98](https://github.com/jsotelo1024/sauronbot/commit/1b58a98a86a9522d7d41edd1937ad70cb116649f))
+* dependencia: mqtt_bridege ([49a288f](https://github.com/jsotelo1024/sauronbot/commit/49a288f93d80ac86af65ec8d98b793c98a7123a1))
+* dependencia: rplidar_ros ([bcc1780](https://github.com/jsotelo1024/sauronbot/commit/bcc178009fa26a5e06271a74363a96a92b70821e))
+* Doc: camara ([3a5ac7b](https://github.com/jsotelo1024/sauronbot/commit/3a5ac7b871b3a85ceb85f15b909cd1d758b3209d))
+* doc: conexion ROS ([81252b9](https://github.com/jsotelo1024/sauronbot/commit/81252b982aa96000021e883bba78696f69682c78))
+* doc: mapeo ([79822b1](https://github.com/jsotelo1024/sauronbot/commit/79822b1727cbefa0d8c4ce61e7f520487947dd4f))
+* Doc: Monitoreo ([dd3273e](https://github.com/jsotelo1024/sauronbot/commit/dd3273ea4a295838931411729f2d4846310f51ee))
+* Doc: navegacion ([f51337a](https://github.com/jsotelo1024/sauronbot/commit/f51337accbded652fc01ab1779b613265e1156a6))
+* img opcion 2 ([cdf6cbc](https://github.com/jsotelo1024/sauronbot/commit/cdf6cbc762af21fd9b05849e31afb1349f6816ad))
+* img opcion 3 ([00ca26c](https://github.com/jsotelo1024/sauronbot/commit/00ca26c764855219a7af59248ca02e1a026a86c6))
+* img opcion 4 ([40ca09d](https://github.com/jsotelo1024/sauronbot/commit/40ca09d6afbabd4bb016be2b49261dfa6022330c))
+* launch navigation ([e77be2b](https://github.com/jsotelo1024/sauronbot/commit/e77be2bb4f37f9919be81662b24da1165e347fde))
+* maps navigation ([d564b50](https://github.com/jsotelo1024/sauronbot/commit/d564b50492bb17586d62023917b3b2e4d7a28b6e))
+* navigation ([54795cd](https://github.com/jsotelo1024/sauronbot/commit/54795cdc2a83e09674ba6600b68dd4f1f2a5b876))
+* param navigation ([a1ee975](https://github.com/jsotelo1024/sauronbot/commit/a1ee97573545e3f8b05c79c386a2c988e9bf8196))
+* rviz navigation ([8f40784](https://github.com/jsotelo1024/sauronbot/commit/8f407840384450fc0c891fb20ca4ccccfc3a3a69))
+* solo movimiento del diferencial ([f6ee85f](https://github.com/jsotelo1024/sauronbot/commit/f6ee85ff2a194565ac29eccc7538d9cd9e2addd0))
+* teleop +x ([c7959fa](https://github.com/jsotelo1024/sauronbot/commit/c7959fa30a083317e7ae9140719853576c92fa59))
+* var model_04 ([20daf85](https://github.com/jsotelo1024/sauronbot/commit/20daf8526c9ad245a53599a90f58693232242d84))
+
+
+### Bug Fixes
+
+* add install pip ([a20cc36](https://github.com/jsotelo1024/sauronbot/commit/a20cc369f83fb4197285f4d9f84cb7db4723a2ab))
+* docs: img topic monitor ([d5fc64c](https://github.com/jsotelo1024/sauronbot/commit/d5fc64c00922aa192ebcc12c0a0442288c61cbaf))
+* docs: img topic monitor ([74258ca](https://github.com/jsotelo1024/sauronbot/commit/74258ca57885309b2eb9780f4513310d212f5d72))
+* model_xx ([bfa23aa](https://github.com/jsotelo1024/sauronbot/commit/bfa23aadc8f06b2ce08ca2d43f68f7e688e8c809))
+* not find requirements.txt ([964b255](https://github.com/jsotelo1024/sauronbot/commit/964b255bedb658c28e3388a2c02decb0e92d9d0b))
+
 ## 1.0.0 (2021-09-30)
 
 

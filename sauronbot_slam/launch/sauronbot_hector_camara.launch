@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="model" default="$(env SAURONBOT_MODEL)" doc="model type [model_01, model_02, model_03]"/> <!-- No afecta -->
+  <arg name="model" default="$(env SAURONBOT_MODEL)" doc="model type [model_01, model_02, model_03, model_04]"/> <!-- No afecta -->
   <arg name="configuration_basename" default="turtlebot3_lds_2d.lua"/> <!-- No afecta -->
 
   <arg name="tf_map_scanmatch_transform_frame_name" default="scanmatcher_frame"/>

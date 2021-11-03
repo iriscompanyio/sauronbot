@@ -1,5 +1,5 @@
 <launch>
-  <arg name="model" default="$(env SAURONBOT_MODEL)" doc="model type [model_01, model_02, model_03]"/>
+  <arg name="model" default="$(env SAURONBOT_MODEL)" doc="model type [model_01, model_02, model_03, model_04]"/>
   <arg name="x_pos" default="1.0"/>
   <arg name="y_pos" default="0.5"/>
   <arg name="z_pos" default="0.0"/>

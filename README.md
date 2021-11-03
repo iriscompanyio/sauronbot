@@ -2,9 +2,10 @@
 _Robot diferencial_
 ## Modelos
 SE cuenta con los siguiente modelos de desarrollo:
-* sauronbot_model_01 [model_01]     --  llantas, lidar   
-* sauronbot_model_02 [model_02]     --  llantas, lidar, RpiCamera
-* sauronbot_model_03 [rover_habich] --  llantas, lidar, RpiCamera, Realsense
+* sauronbot_model_01 **[model_01]**     --  llantas, lidar   
+* sauronbot_model_02 **[model_02]**     --  llantas, lidar, RpiCamera
+* sauronbot_model_03 **[rover_habich]** --  llantas, lidar, RpiCamera, Realsense
+* sauronbot_model_04 **[model_04]** --  llantas, lidar, RpiCamera
 ## Comenzando 🚀
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 Mira **Deployment** para conocer como desplegar el proyecto.

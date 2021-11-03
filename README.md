@@ -175,7 +175,7 @@ rqt
 ```
 Seleccionar _Plugins/Topics/Topic Monitor_
 
-<img src="/home/auror1024/Pictures/Screenshot from 2021-10-14 14-38-13.png" width="500">
+<img src="https://drive.google.com/file/d/1V1NW5-CdyPlD71YSbCmO87Xw6ycYgDZt/view?usp=sharing" width="500">
 
 ---
 ## NOTA: SOLO MOVIMIENTO DEL ROBOT DIFERENCIAL
